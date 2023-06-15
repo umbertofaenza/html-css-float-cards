@@ -25,6 +25,7 @@
     background-color: #0f0e17;
     float: left;
     margin: 20px 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
 .card-text {
