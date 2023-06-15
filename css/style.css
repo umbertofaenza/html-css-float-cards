@@ -5,14 +5,35 @@
 }
 
 /* UTILS */
-
-.debug {
-    border: 2px solid black;
+.container {
+    width: 70%;
+    margin: 0 auto;
 }
 
-.container {
-    max-width: 50%;
-    margin: 0 auto;
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cards-section {
+    min-width: 100%;
+}
+
+.card {
+    min-width: calc(100% / 3 - 20px);
+    background-color: #0f0e17;
+    float: left;
+    margin: 20px 10px;
+}
+
+.card-text {
+    color: white;
+    padding: 10px 0;
+    float: left;
+}
+.email {
+    color: #2dc7ec;
 }
 
 /* GENERICS */
@@ -26,6 +47,12 @@ h1, p {
     margin: 30px 0;
 }
 
+h2 {
+    text-transform: uppercase;
+}
+
+/* HEADER */
+
 h1 {
     font-size: 2rem;
     font-weight: 800;
@@ -33,3 +60,10 @@ h1 {
     padding-bottom: 20px;
 }
 
+/* MAIN */
+
+.card > img {
+    max-width: 25%;
+    float: left;
+    margin-right: 10px;
+}
